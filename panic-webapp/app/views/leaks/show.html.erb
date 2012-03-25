@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Address:</b>
+  <%= @leak.address %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @leak.name %>
+</p>
+
+
+<%= link_to 'Edit', edit_leak_path(@leak) %> |
+<%= link_to 'Back', leaks_path %>

@@ -1,0 +1,2 @@
+module LeaksHelper
+end

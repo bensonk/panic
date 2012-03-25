@@ -1,4 +1,8 @@
 PanicWebapp::Application.routes.draw do
+  resources :leaks
+
+  resources :credentials
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
