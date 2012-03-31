@@ -52,4 +52,8 @@ plot(all$length, all$percent, col='darkblue', type='l', xlab="Password Length",
      ylab="Percentage of Passwords", main="Comparative Password Lengths")
 dev.off()
 
-# TODO: Add complexity vs length graphs
+complex <- read.csv("lengths/complex.csv")
+
+png("graphs/complex.png", width=1000, height=800)
+barplot(complex$Frequency, main="Password Complexity", xlab="Complexity", ylab="Frequency", names.arg=complex$Complexity)
+graphics.off()
